@@ -1,0 +1,85 @@
+.wrap-edit {
+    background: rgba(255, 249, 249, .2);
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 50px;
+}
+
+.wrap-edit h1 {
+    margin-bottom: 15px;
+    color: #171717;
+    position: relative;
+    pointer-events: none;
+}
+
+.wrap-edit h1::before {
+    content: '';
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: 37px;
+    background: #171717;
+}
+
+.wrap-edit input[type="text"] {
+    padding: 10px 10px;
+    border-radius: 32px;
+    margin-bottom: 12px;
+    border: 1px solid;
+    outline: none;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .4);
+    transition: .5s ease;
+}
+
+.wrap-edit select,
+option {
+    width: 213px;
+    height: 32px;
+    border-radius: 32px;
+    margin-bottom: 12px;
+    border: 1px solid black;
+    outline: none;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .4);
+    transition: .5s ease;
+    text-align: center;
+}
+
+.wrap-edit input[type="submit"] {
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .4);
+    transition: .5s ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.wrap-edit input[type="submit"]:hover {
+    box-shadow: none;
+    transform: translateY(10px);
+    border: none;
+}
+
+
+.wrap-edit input[type="text"]:focus {
+    padding: 10px 25px;
+}
+
+/* eror text */
+.eror-txt {
+    color: #dd2d2d;
+}
